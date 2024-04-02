@@ -20,14 +20,14 @@ Topics
     :depth: 1
     :local:
 
------------------------------------------------
 Using two different locale within the same test
 -----------------------------------------------
 If your test needs include using two (or more) different "languages" or locales within the
 same test case you can do this by importing the library multiple times. Each instance
 setting the locale on import to a required language and, this is key, rename that instance
-the library. This is done using the ``<import library> AS <another name>`` syntax as
-`described in the Robot Fraemwork User Guide <https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#setting-custom-name-to-library>`_.
+the library. This is done using the ``<import library> AS <another name>`` syntax `as
+described <https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#setting-custom-name-to-library>`_
+in the Robot Framework User Guide.
 
 .. sourcecode:: robotframework
 
@@ -44,4 +44,3 @@ the library. This is done using the ``<import library> AS <another name>`` synta
         Log To Console   \nFrench name: ${f_name}
 
 Then within your test case use the renamed library prefix to the keywords.
-
